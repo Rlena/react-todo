@@ -6,7 +6,7 @@ const TodoList = ( { todos } ) => {
 
   const elements = todos.map((item) => {
 
-    // itemProps - rest-параметр, в который войдут все свойства объекта item, кроме id
+    // itemProps - rest-параметр, в который войдут все свойства объекта item, кроме id (label и important)
     // id был деструктурирован в выражении
     const { id, ...itemProps } = item;
 
